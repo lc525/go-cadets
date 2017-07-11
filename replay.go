@@ -57,7 +57,7 @@ type ReplayConfig struct {
   * timestamps t < evt_start + ChunkDeltaThresh will be replayed as if they would all
   * have timestamp evt_start.
   *
-  * As trace times are in us, a ChunkDeltaThresh of 1e6 represents 1 second
+  * As trace times are in ns, a ChunkDeltaThresh of 1e9 represents 1 second
   */
   ChunkDeltaThresh      uint64
 
